@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragement_home"
+        android:name="com.sq.ywt.fragment.FragmentHome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_more"
+        android:name="com.sq.ywt.fragment.FragmentMore"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/mainbg" />
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/rg_btn_style"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home_selector"
+            android:text="@string/homepage"
+            android:textColor="@drawable/main_home_textcolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/main_more_selector"
+            android:text="@string/more"
+            android:textColor="@drawable/main_home_textcolor"
+            android:textSize="@dimen/textSize_14" />
+
+    </RadioGroup>
+
+</LinearLayout>
