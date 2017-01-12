@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.login:
                 Intent home = new Intent();
-                Intent intent = home.setClass(this, HomeFragmentActivity.class);
+                home.setClass(this, HomeFragmentActivity.class);
                 startActivity(home);
                 finish();
                 break;

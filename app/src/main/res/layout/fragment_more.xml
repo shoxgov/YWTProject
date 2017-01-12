@@ -5,5 +5,17 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-
+    <com.sq.ywt.view.MyGridView
+        android:id="@+id/more_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:verticalSpacing="5dip" />
 </LinearLayout>
