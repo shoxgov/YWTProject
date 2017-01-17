@@ -30,6 +30,14 @@
         </activity>
         <activity android:name=".activity.HomeFragmentActivity" />
         <activity android:name=".activity.NoticeInfoActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.BussinessManagerActivity" />
+        <activity android:name=".activity.FinanceManagerActivity" />
+        <activity android:name=".activity.TradeCenterActivity" />
+        <activity android:name=".activity.PersonCenterActivity" />
+        <activity android:name=".activity.ModifyPwdActivity" />
+        <activity android:name=".activity.ModifyInfoActivity" />
+        <activity android:name=".activity.MailCenterActivity" />
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

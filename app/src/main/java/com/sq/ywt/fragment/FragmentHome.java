@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.sq.ywt.R;
 import com.sq.ywt.activity.NoticeInfoActivity;
+import com.sq.ywt.activity.RegisterActivity;
 import com.sq.ywt.view.BannerView;
 
 import java.util.ArrayList;
@@ -98,7 +99,9 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
                 break;
             case R.id.home_function_register:
-
+                Intent registory_more = new Intent();
+                registory_more.setClass(getActivity(), RegisterActivity.class);
+                getActivity().startActivity(registory_more);
                 break;
         }
     }

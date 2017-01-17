@@ -1,18 +1,28 @@
 package com.sq.ywt.fragment;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 import com.sq.ywt.R;
+import com.sq.ywt.activity.BussinessManagerActivity;
+import com.sq.ywt.activity.FinanceManagerActivity;
+import com.sq.ywt.activity.MailCenterActivity;
+import com.sq.ywt.activity.PersonCenterActivity;
+import com.sq.ywt.activity.TradeCenterActivity;
 import com.sq.ywt.adapter.CustomGridViewAdapter;
 import com.sq.ywt.bean.SettingItemInfo;
 import com.sq.ywt.view.MyGridView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.widget.AdapterView.OnItemClickListener;
 
 
 public class FragmentMore extends Fragment {
@@ -43,6 +53,7 @@ public class FragmentMore extends Fragment {
         gridview = (MyGridView) getView().findViewById(R.id.more_gridview);
         adapter = new CustomGridViewAdapter(getActivity());
         gridview.setAdapter(adapter);
+        gridview.setOnItemClickListener(listener);
     }
 
     private void init() {
@@ -77,4 +88,40 @@ public class FragmentMore extends Fragment {
         email.setName("邮件中心");
         data.add(email);
     }
+
+    OnItemClickListener listener = new OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+            switch (position) {
+                case 0:
+                    Intent bussiness = new Intent();
+                    bussiness.setClass(getActivity(), BussinessManagerActivity.class);
+                    getActivity().startActivity(bussiness);
+                    break;
+                case 1:
+                    Intent finance = new Intent();
+                    finance.setClass(getActivity(), FinanceManagerActivity.class);
+                    getActivity().startActivity(finance);
+                    break;
+                case 2:
+                    Intent trade = new Intent();
+                    trade.setClass(getActivity(), TradeCenterActivity.class);
+                    getActivity().startActivity(trade);
+                    break;
+                case 3:
+                    Intent person = new Intent();
+                    person.setClass(getActivity(), PersonCenterActivity.class);
+                    getActivity().startActivity(person);
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    Intent mail = new Intent();
+                    mail.setClass(getActivity(), MailCenterActivity.class);
+                    getActivity().startActivity(mail);
+                    break;
+            }
+        }
+    };
+
 }
