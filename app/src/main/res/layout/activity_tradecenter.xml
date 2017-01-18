@@ -55,6 +55,7 @@
             android:weightSum="2">
 
             <TextView
+                android:id="@+id/trade_credit_apply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -67,6 +68,7 @@
                 android:background="@color/mainbg" />
 
             <TextView
+                android:id="@+id/trade_credit_apply_history"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -86,6 +88,7 @@
             android:weightSum="2">
 
             <TextView
+                android:id="@+id/trade_buy_apply"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -98,6 +101,7 @@
                 android:background="@color/mainbg" />
 
             <TextView
+                android:id="@+id/trade_buy_apply_history"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

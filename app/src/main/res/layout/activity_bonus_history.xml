@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:weightSum="57">
+    android:orientation="vertical">
 
     <include
         layout="@layout/title_bar"
@@ -18,40 +17,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7"
-        android:weightSum="2">
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="收件箱" />
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/mainbg" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="发件箱" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="提现总额：110" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/mainbg" />
-
     <ListView
-        android:id="@+id/mailList"
+        android:id="@+id/bonushistoryList"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="50"
+        android:layout_height="match_parent"
         android:background="@color/white"
         android:cacheColorHint="@android:color/transparent"
         android:divider="@color/mainbg"

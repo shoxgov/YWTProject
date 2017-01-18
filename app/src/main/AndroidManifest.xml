@@ -38,6 +38,18 @@
         <activity android:name=".activity.ModifyPwdActivity" />
         <activity android:name=".activity.ModifyInfoActivity" />
         <activity android:name=".activity.MailCenterActivity" />
+        <activity android:name=".activity.SendMailActivity" />
+        <activity android:name=".activity.MyTeamActivity" />
+        <activity android:name=".activity.CustomCardActivity" />
+        <activity android:name=".activity.CustomCardHistoryActivity" />
+        <activity android:name=".activity.ReCastActivity" />
+        <activity android:name=".activity.ReCastHistoryActivity" />
+        <activity android:name=".activity.BonusWithdrawActivity" />
+        <activity android:name=".activity.BonusHistoryActivity" />
+        <activity android:name=".activity.BonusDetailActivity" />
+        <activity android:name=".activity.MemberTransferActivity" />
+        <activity android:name=".activity.MemberTransferHistoryActivity" />
+        <activity android:name=".activity.TradeCreditApplyActivity" />
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

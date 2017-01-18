@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="15dip"
-        android:text="公告标题 " />
+        android:text="admin100 " />
 
     <TextView
         android:id="@+id/mail_time"

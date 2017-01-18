@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stargrade">
+        <item>==请选择==</item>
+        <item>一星200</item>
+        <item>二星400</item>
+        <item>三星500</item>
+        <item>四星1000</item>
+        <item>五星2000</item>
+        <item>六星4000</item>
+        <item>七星8000</item>
+    </string-array>
+    <string-array name="recast">
+        <item>==请选择==</item>
+        <item>一星</item>
+        <item>二星</item>
+        <item>三星</item>
+        <item>四星</item>
+        <item>五星</item>
+        <item>六星</item>
+        <item>七星</item>
+    </string-array>
+    <string-array name="bank">
+        <item>==请选择==</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+        <item>中国广发银行</item>
+        <item>中国工商银行</item>
+        <item>招商银行</item>
+        <item>浦发银行</item>
+        <item>兴业银行</item>
+    </string-array>
+</resources>

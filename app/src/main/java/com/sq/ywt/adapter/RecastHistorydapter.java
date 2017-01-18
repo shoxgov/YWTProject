@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.TextView;
 
 import com.sq.ywt.R;
 import com.sq.ywt.bean.NoticItemInfo;
@@ -21,11 +20,11 @@ import java.util.List;
  * @Class: GridViewAdapter
  * @version: V1.0
  */
-public class MailAdapter extends BaseAdapter {
+public class RecastHistorydapter extends BaseAdapter {
     private Context mContext;
     private List<NoticItemInfo> mList;
 
-    public MailAdapter(Context mContext) {
+    public RecastHistorydapter(Context mContext) {
         super();
         this.mContext = mContext;
     }
@@ -64,10 +63,7 @@ public class MailAdapter extends BaseAdapter {
         if (convertView == null) {
             holder = new ViewHolder();
             convertView = LayoutInflater.from(this.mContext).inflate(
-                    R.layout.mail_item, null);
-            holder.title = (TextView) convertView.findViewById(R.id.mail_title);
-            holder.time = (TextView) convertView.findViewById(R.id.mail_time);
-            holder.detail = (TextView) convertView.findViewById(R.id.mail_detail);
+                    R.layout.recasthistory_item, null);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -76,8 +72,5 @@ public class MailAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
-        public TextView title;
-        public TextView time;
-        public TextView detail;
     }
 }

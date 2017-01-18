@@ -20,9 +20,6 @@ import java.util.List;
 
 /**
  * @Class: GridViewAdapter
- * @Package: com.unibroad.carphone.adapter
- * @Description: TODO(描述类作用)
- * @author: wsy@unibroad.com
  * @version: V1.0
  */
 public class CustomGridViewAdapter extends BaseAdapter {

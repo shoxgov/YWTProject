@@ -11,6 +11,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.sq.ywt.R;
+import com.sq.ywt.activity.BonusDetailActivity;
+import com.sq.ywt.activity.BonusWithdrawActivity;
+import com.sq.ywt.activity.MailCenterActivity;
+import com.sq.ywt.activity.MemberTransferActivity;
 import com.sq.ywt.activity.NoticeInfoActivity;
 import com.sq.ywt.activity.RegisterActivity;
 import com.sq.ywt.view.BannerView;
@@ -87,16 +91,24 @@ public class FragmentHome extends Fragment implements View.OnClickListener {
 
                 break;
             case R.id.home_function_withdraw:
-
+                Intent bonus = new Intent();
+                bonus.setClass(getActivity(), BonusWithdrawActivity.class);
+                getActivity().startActivity(bonus);
                 break;
             case R.id.home_function_rewarddetail:
-
+                Intent bonusDetail = new Intent();
+                bonusDetail.setClass(getActivity(), BonusDetailActivity.class);
+                getActivity().startActivity(bonusDetail);
                 break;
             case R.id.home_function_transfer:
-
+                Intent transfer = new Intent();
+                transfer.setClass(getActivity(), MemberTransferActivity.class);
+                getActivity().startActivity(transfer);
                 break;
             case R.id.home_function_email:
-
+                Intent mailCenter = new Intent();
+                mailCenter.setClass(getActivity(), MailCenterActivity.class);
+                getActivity().startActivity(mailCenter);
                 break;
             case R.id.home_function_register:
                 Intent registory_more = new Intent();

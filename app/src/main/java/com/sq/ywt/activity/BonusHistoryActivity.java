@@ -1,13 +1,12 @@
 package com.sq.ywt.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.ListView;
 
 import com.sq.ywt.R;
-import com.sq.ywt.adapter.MailAdapter;
+import com.sq.ywt.adapter.BonusHistorydapter;
 import com.sq.ywt.bean.NoticItemInfo;
 import com.sq.ywt.view.TitleBarLayout;
 
@@ -16,33 +15,29 @@ import java.util.List;
 
 
 /**
- * Created by wsy on 2017/1/17.
+ * Created by wsy on 2017/1/18.
  */
-public class MailCenterActivity extends Activity {
-    private ListView mailList;
-    private MailAdapter adapter;
+public class BonusHistoryActivity extends Activity {
+    private ListView historyList;
+    private BonusHistorydapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_mailcenter);
+        setContentView(R.layout.activity_bonus_history);
         initView();
         init();
     }
 
     private void initView() {
-        mailList = (ListView) findViewById(R.id.mailList);
+        historyList = (ListView) findViewById(R.id.bonushistoryList);
         TitleBarLayout titleLayout = (TitleBarLayout) findViewById(R.id.titlelayout);
-        titleLayout.setTitle("邮件中心");
-        titleLayout.setRightBtnShow("发邮件");
+        titleLayout.setTitle("提现记录");
         titleLayout.setTitleBarListener(new TitleBarLayout.TitleBarListener() {
 
             @Override
             public void rightClick() {
-                Intent sendMail = new Intent();
-                sendMail.setClass(MailCenterActivity.this,SendMailActivity.class);
-                startActivity(sendMail);
             }
 
             @Override
@@ -53,8 +48,8 @@ public class MailCenterActivity extends Activity {
     }
 
     private void init() {
-        adapter = new MailAdapter(this);
-        mailList.setAdapter(adapter);
+        adapter = new BonusHistorydapter(this);
+        historyList.setAdapter(adapter);
         List<NoticItemInfo> data = new ArrayList<NoticItemInfo>();
         data.add(new NoticItemInfo());
         data.add(new NoticItemInfo());

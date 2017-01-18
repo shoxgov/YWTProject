@@ -1,11 +1,13 @@
 package com.sq.ywt.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.sq.ywt.R;
 import com.sq.ywt.adapter.CustomGridViewAdapter;
@@ -97,18 +99,31 @@ public class FinanceManagerActivity extends Activity {
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
             switch (position) {
                 case 0:
+                    Intent bonus = new Intent();
+                    bonus.setClass(FinanceManagerActivity.this, BonusWithdrawActivity.class);
+                    startActivity(bonus);
                     break;
                 case 1:
+                    Toast.makeText(FinanceManagerActivity.this, "暂未开放", Toast.LENGTH_SHORT).show();
                     break;
                 case 2:
+                    Toast.makeText(FinanceManagerActivity.this, "暂未开放", Toast.LENGTH_SHORT).show();
                     break;
                 case 3:
+                    Toast.makeText(FinanceManagerActivity.this, "暂未开放", Toast.LENGTH_SHORT).show();
                     break;
                 case 4:
+                    Intent bonusDetail = new Intent();
+                    bonusDetail.setClass(FinanceManagerActivity.this, BonusDetailActivity.class);
+                    startActivity(bonusDetail);
                     break;
                 case 5:
+                    Intent transfer = new Intent();
+                    transfer.setClass(FinanceManagerActivity.this, MemberTransferActivity.class);
+                    startActivity(transfer);
                     break;
                 case 6:
+                    Toast.makeText(FinanceManagerActivity.this, "暂未开放", Toast.LENGTH_SHORT).show();
                     break;
             }
         }

@@ -72,7 +72,7 @@ public class BannerView extends RelativeLayout {
 
         //让banner的高度是屏幕的1/4
         ViewGroup.LayoutParams vParams = mViewPager.getLayoutParams();
-        vParams.height = HomeFragmentActivity.screenWidthPixels * 430 / 1903;
+        vParams.height = HomeFragmentActivity.screenHeightPixels * 1 / 4;
         mViewPager.setLayoutParams(vParams);
     }
 

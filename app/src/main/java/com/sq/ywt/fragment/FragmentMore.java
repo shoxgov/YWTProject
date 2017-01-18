@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.sq.ywt.R;
 import com.sq.ywt.activity.BussinessManagerActivity;
@@ -114,6 +115,7 @@ public class FragmentMore extends Fragment {
                     getActivity().startActivity(person);
                     break;
                 case 4:
+                    Toast.makeText(getActivity(), "暂未定义", Toast.LENGTH_SHORT).show();
                     break;
                 case 5:
                     Intent mail = new Intent();

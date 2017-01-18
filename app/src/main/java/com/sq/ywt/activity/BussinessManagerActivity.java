@@ -1,11 +1,13 @@
 package com.sq.ywt.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.sq.ywt.R;
 import com.sq.ywt.adapter.CustomGridViewAdapter;
@@ -93,16 +95,29 @@ public class BussinessManagerActivity extends Activity {
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
             switch (position) {
                 case 0:
+                    Intent myteam = new Intent();
+                    myteam.setClass(BussinessManagerActivity.this, MyTeamActivity.class);
+                    startActivity(myteam);
                     break;
                 case 1:
+                    Toast.makeText(BussinessManagerActivity.this, "暂未定义", Toast.LENGTH_SHORT).show();
                     break;
-                case 2:
+                case 2:Toast.makeText(BussinessManagerActivity.this, "暂未定义", Toast.LENGTH_SHORT).show();
                     break;
                 case 3:
+                    Intent reinsert = new Intent();
+                    reinsert.setClass(BussinessManagerActivity.this, ReCastActivity.class);
+                    startActivity(reinsert);
                     break;
                 case 4:
+                    Intent registory_more = new Intent();
+                    registory_more.setClass(BussinessManagerActivity.this, RegisterActivity.class);
+                    startActivity(registory_more);
                     break;
                 case 5:
+                    Intent card = new Intent();
+                    card.setClass(BussinessManagerActivity.this, CustomCardActivity.class);
+                    startActivity(card);
                     break;
             }
         }

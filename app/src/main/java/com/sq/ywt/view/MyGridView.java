@@ -11,9 +11,6 @@ import android.widget.GridView;
 
 /**
  * @Class: MyGridView
- * @Package: com.unibroad.carphone.widget
- * @Description: TODO(描述类作用)
- * @author: wsy@unibroad.com
  * @version: V1.0
  */
 public class MyGridView extends GridView {
